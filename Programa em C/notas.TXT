@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void){
+
+	float notas[5] = {0};
+	float total = 0;
+	float meda = 0;
+	
+	printf("Insire % notas: \n");
+
+	for(int i =0; i<5; i++)
+		scanf("%f", &notas[I]);
+
+	for(int i = 0; i<5; ++i)
+		total += notas[i];
+	
+	media = total/5;
+
+	printf("\nA media do aluno e %f", media)
+
+
+	return 0;
+
+}

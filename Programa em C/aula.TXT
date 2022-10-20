@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(vaid){	
+	printf("Pause no Sistema!!!");
+	System("pause");
+	
+
+	return 0;
+}
