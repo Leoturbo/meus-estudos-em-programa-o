@@ -5,10 +5,14 @@ public class ParEImpar {
 
 		Scanner scan = new Scanner (System.in);
 
+		System.out.println("Escolhar 5 Number");
+
 		int number;
 		System.out.println("Quantidade de números: ");
 		number = scan.nextInt();
-		int count, numberPar, numberImpares = 0;
+		int count = 0;
+		int numberPar = 0; 
+		int numberImpares = 0;
 
 		do{
 			System.out.println("Number: ");
