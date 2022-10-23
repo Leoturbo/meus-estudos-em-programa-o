@@ -1,0 +1,38 @@
+*,
+*::before,*::after{
+	box-sizing: border-box;
+}
+html,
+body{
+	height: 100%;
+}
+body{
+	font-family: "Loto", system-ui, -apple-system, "Segoe UI";
+	background-color: #eaeaea;
+	color: #001f3f;
+	margin: 0;
+	overflow: hidden;
+}
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+}
+.player{
+	width: 480px;
+	padding: 48px, 64px;
+	border-radius: 36px;
+	background: #eaeaea;
+	box-shadow: 41px 41px 82px #bebebe, -41px 41px 82px #ffffff;
+}
+.player music-name{
+	margin: 0;
+	margin-top: 8px;
+	text-align: center;
+}
+.player .music-author{
+	margin: 0;
+	color: #a5aaaf;
+	text-align: center;
+}
