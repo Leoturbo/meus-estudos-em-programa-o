@@ -11,16 +11,46 @@
 			justify-content: center;
 			min-height: 100%;
 		}
+
+		.player{
+			margin-top: 100px;
+			width: 480px;
+			padding: 48px, 64px;
+			border-radius: 36px;
+			background: #eaeaea;
+			box-shadow: 41px 41px 82px #bebebe, -41px 41px 82px #ffffff;
+		}
 	</style>
 </head>
 <body>
+	<audio id="myaudio"  control>
+		<source src="./assets/Musics/02 Stressed Out.m4a" type="audio/m4a"></audio>
 	
 <div class="container">
-<iframe src='https://www.4shared.com/web/embed/audio/file/f9mJX1Hkgm?type=NORMAL&widgetWidth=530&showArtwork=true&playlistHeight=0&widgetRid=137712037657' 
-style='overflow:hidden;height:152px;width:530px;border: 0;margin:0;'>
-	
-</iframe>
-</div>
+<h1>Player musical</h1>
+<p>Playback position: <span id="demo"></span></p>
 
+<button class="player">Play</button>
+</div>
+<script type="text/javascript">
+	const button = document.querySelector('button');
+	button.addEventListener('click', function() {
+		// body...
+		const audio = document.querySelector('myaudio')
+		audio.currentTime = 0;
+		audio.play();
+	})
+
+	// Get the audio element with id="myAudio"
+	let aud = document.getElementById("myAudio");
+
+	// Assign an ontimeupdate event to the audio element, and execute a function if the current playback position has changed
+	aud.ontimeupdate = function() {myFunction()};
+
+	function myFunction() {
+	  // Display the current position of the audio in a p element with id="demo"
+	  document.getElementById("demo").innerHTML = aud.currentTime;
+}
+</script>
 </body>
 </html>

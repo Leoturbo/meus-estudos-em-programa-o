@@ -13,41 +13,41 @@ let currentMusic = 0;
 
 const musics = [
 {
-	nome: "Easy On Me",
+	name: "Easy On Me",
 	author: "Adelle",
 	path: "./assets/musics/Adelle - Easy On Me.mp3",
 },
 
 {
-	nome: "Paradise",
+	name: "Paradise",
 	author: "Cold Play",
 	path: "./assets/musics/Cold Play - Paradise.mp3",
 },
 
 {
-	nome: "A Sky Full of Stars",
+	name: "A Sky Full of Stars",
 	author: "Cold Play",
 	path: "./assets/musics/A Sky Full of Stars.mp3",
 },
 
 {
-	nome: "Stressed Out",
+	name: "Stressed Out",
 	author: "Twenty One Pilots",
 	path: "./assets/musics/02 Stressed Out.m4a",
 },
 
 {
-	nome: "Anjos",
+	name: "Anjos",
 	author: "Rappa",
 	path: "./assets/musics/Anjos (Pra Quem Tem Fé) [Versão Rádio]",
 },
 ];
 
 
-btnPlay.addEventListener("click", () => togglePlayMusic());
-btnPrev.addEventListener("click", () => changeMusic(false));
-btnNext.addEventListener("click", () => changeMusic());
-audioPlayer.addEventListener("timeupdate", () => timeUpdate());
+btnPlay.addEventListener('click', () => togglePlayMusic());
+btnPrev.addEventListener('click', () => changeMusic(false));
+btnNext.addEventListener('click', () => changeMusic());
+audioPlayer.addEventListener('timeupdate', () => timeUpdate());
 
 
 
@@ -81,7 +81,7 @@ const updatePlayer = () => {
 	musicAuthor.innerHTML = music.author;
 	audioPlayer.src = music.path;
 };
- const timeupdate = () => {
+ const timeUpdate = () => {
  	const { currentTime, duration } = audioPlayer;
 
  	if (isNaN(duration)) return;

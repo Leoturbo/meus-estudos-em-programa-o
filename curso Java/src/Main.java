@@ -5,6 +5,10 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
 
+
+        String[] nomes = {"Camila", "Venilton", "Leonardo", "Renan", "Rafael"};
+        System.out.print(nomes.length);
+
         InputStreamReader isr = new InputStreamReader(System.in);
         BufferedReader br = new BufferedReader(isr);
 
