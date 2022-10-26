@@ -1,0 +1,20 @@
+algoritmo "Imprime o maior"
+var
+	num1, num2, maior: real
+inicio
+
+Escreval("Digite o primeiro número: ")
+Leia(num1)
+
+Escreval("Digite o segundo número: ")
+Leia(num2)
+
+se (num1 >= num2) então
+	maior <- num1
+senão
+	maior <- num2
+fimse
+
+Escreval("maior número: ", maior)
+
+fimalgoritmo
