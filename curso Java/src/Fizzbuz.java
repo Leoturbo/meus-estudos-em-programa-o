@@ -8,7 +8,7 @@ public class Fizzbuz {
 
        int  num = numero.nextInt();
 
-        fizzbuz(3);
+        fizzbuz(num);
         
      
       
@@ -20,12 +20,16 @@ public class Fizzbuz {
         for (int i = num; i < 100; i++) {
             if(i % 3 == 0 && i % 5 == 0){
                 System.out.println("Fizzbuzz");
+                break;
             }else if(i % 5 == 0){
                 System.out.println("Buzz");
+                break;
             }else if(i % 3 == 0){
                 System.out.println("Fizz");
+                break;
             }else{
                 System.out.println(i);
+                break;
             }
         }
     }
